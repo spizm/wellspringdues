@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', function () {
           quantity: 1
         }],
         mode: 'payment',
-        successUrl: 'https://www.wellspringensemble.org/success',
-        cancelUrl: 'https://www.wellspringensemble.org/canceled',
+        successUrl: 'https://dues.wellspringensemble.org/success',
+        cancelUrl: 'https://dues.wellspringensemble.org/canceled',
       })
       .then(function (result) {
         if (result.error) {
