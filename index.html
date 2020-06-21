@@ -6,7 +6,7 @@
   <meta charset="utf-8" />
   <meta name="description" content="Dues collection page for wellspring members" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="theme-color" content="#7952b3" />
+  <meta name="theme-color" content="#3d6f9e" />
 
   <!-- CSS only -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
@@ -23,7 +23,7 @@
 
   <!-- Load Stripe.js on your website. -->
   <script src="https://js.stripe.com/v3/"></script>
-  <script src="js/dues.js"></script>
+  <script src="js/dues.js?version=1"  ></script>
 </head>
 
 <body class="d-flex h-100 text-center text-white bg-dark">
@@ -35,6 +35,8 @@
         <button id="dues-button" class="btn btn-lg btn-secondary font-weight-bold border-white bg-white">Pay
           Dues</button>
       </p>
+
+      <p id="error-message" class="lead"></p>
     </main>
 
     <footer class="mt-auto text-white-50">
