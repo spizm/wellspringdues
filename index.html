@@ -23,16 +23,45 @@
 
   <!-- Load Stripe.js on your website. -->
   <script src="https://js.stripe.com/v3/"></script>
-  <script src="js/dues.js?version=1"  ></script>
+  <script src="js/dues.js?version=2"  ></script>
 </head>
 
 <body class="d-flex h-100 text-center text-white bg-dark">
   <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <main class="px-3">
-      <h1>Wellspring Member Dues</h1>
-      <p class="lead">For summer of 2020, the dues will be $60. This helps cover our operating costs.</p>
+      <h1 class="mb-3">Wellspring Member Dues</h1>
+      <p class="mb-5">For summer of 2020, the dues will be $60. This helps cover our operating costs.</p>
       <p class="lead">
-        <button id="dues-button" class="btn btn-lg btn-secondary font-weight-bold border-white bg-white">Pay
+        Optional donation:
+      </p>
+      <div class="btn-group mb-3">
+        <input type="radio" class="btn-check" name="donation-amount" id="option1" autocomplete="off" data-price=""
+          checked>
+        <label class="btn btn-secondary" for="option1">None</label>
+
+        <input type="radio" class="btn-check" name="donation-amount" id="option2" autocomplete="off"
+          data-price="price_1GwKrhDrsB0XpAimcACl26BV">
+        <label class="btn btn-secondary" for="option2">$10</label>
+
+        <input type="radio" class="btn-check" name="donation-amount" id="option3" autocomplete="off"
+          data-price="price_1GwKrhDrsB0XpAimXtzWU0Wf">
+        <label class="btn btn-secondary" for="option3">$20</label>
+
+        <input type="radio" class="btn-check" name="donation-amount" id="option4" autocomplete="off"
+          data-price="price_1GwKrhDrsB0XpAim77REXYc2">
+        <label class="btn btn-secondary" for="option4">$25</label>
+
+        <input type="radio" class="btn-check" name="donation-amount" id="option5" autocomplete="off"
+          data-price="price_1GwKrhDrsB0XpAimRGPgGV91">
+        <label class="btn btn-secondary" for="option5">$50</label>
+
+        <input type="radio" class="btn-check" name="donation-amount" id="option6" autocomplete="off"
+          data-price="price_1GwKs3DrsB0XpAim70uQRzBt">
+        <label class="btn btn-secondary" for="option6">$100</label>
+      </div>
+
+      <p class="lead">
+        <button id="dues-button" class="btn btn-lg btn-light font-weight-bold">Pay
           Dues</button>
       </p>
 
