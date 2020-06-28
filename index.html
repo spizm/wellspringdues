@@ -26,17 +26,46 @@
   <script src="js/dues.js?version=2"  ></script>
 </head>
 
-<body class="d-flex h-100 text-center text-white bg-dark">
-  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-    <main class="px-3">
-      <h1 class="mb-3">Wellspring Member Dues</h1>
-      <p class="mb-5">For summer of 2020, the dues will be $60. This helps cover our operating costs.</p>
-      <p class="lead">
+<body class="text-white bg-dark">
+  <div class="container">
+    <main class="px-3 py-5">
+      <h1 class="mb-3 text-center">Wellspring Membership Dues</h1>
+      <p class="mb-5 text-center lead">Here you will be able to pay your $60 membership dues for the virtual summer
+        session of 2020!</p>
+      <p>
+        The buttons below will allow you to add an additional donation of $10, $20, $25, $50, $60 and $100. This is
+        optional and clicking NONE will pay just the $60 fee. If you choose to donate extra, it should be reflected in
+        your contract as to where you would like this to go, either to help with scholarships for others wanting to
+        participate, or to our general fund. This can be found in the final section of the contract form. If, for any
+        reason, you would like to donate a different amount, select NONE and after submitting your normal payment, head
+        to <a href="https://www.wellspringensemble.org/donate">wellspringensemble.org</a> to donate as normal.
+      </p>
+
+      <p>
+        Dues help to cover the operating costs of the ensemble which include:
+
+        <ul>
+          <li>Payment of our employees, Evan and Genevieve</li>
+          <li>Materials/Music/Etc.</li>
+          <li>Time for Audio and Video Engineering</li>
+          <li>Software costs</li>
+          <li>Social Media engagement (Boosting, etc)</li>
+          <li>and more!</li>
+        </ul>
+      </p>
+
+      <p class="mb-5">
+        Thank you so much for participating in the exciting virtual summer session! We will be getting you materials
+        soon!
+      </p>
+
+      <p class="lead text-center">
         Additional donation:
       </p>
-      <div class="btn-group mb-3">
+
+      <div class="btn-group mb-3 d-flex justify-content-center">
         <input type="radio" class="btn-check" name="donation-amount" id="option1" autocomplete="off" data-price=""
-          checked>
+        checked>
         <label class="btn btn-secondary" for="option1">None</label>
 
         <input type="radio" class="btn-check" name="donation-amount" id="option2" autocomplete="off"
@@ -56,7 +85,7 @@
         <label class="btn btn-secondary" for="option5">$50</label>
 
         <input type="radio" class="btn-check" name="donation-amount" id="option6" autocomplete="off"
-        data-price="price_1Gz4U3DrsB0XpAimuACJke5r">
+          data-price="price_1Gz4U3DrsB0XpAimuACJke5r">
         <label class="btn btn-secondary" for="option6">$60</label>
 
         <input type="radio" class="btn-check" name="donation-amount" id="option7" autocomplete="off"
@@ -64,17 +93,14 @@
         <label class="btn btn-secondary" for="option7">$100</label>
       </div>
 
-      <p class="lead">
-        <button id="dues-button" class="btn btn-lg btn-light font-weight-bold">Pay
-          Dues</button>
+      <p class="lead text-center">
+        <button id="dues-button" class="btn btn-lg btn-light font-weight-bold shadow">
+          Pay Dues
+        </button>
       </p>
 
-      <p id="error-message" class="lead"></p>
+      <p id="error-message" class="lead mb-5"></p>
     </main>
-
-    <footer class="mt-auto text-white-50">
-      <p>
-    </footer>
   </div>
 </body>
 
