@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <title>Donate your Ticket</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Donate your ticket for the Wellspring Ensemble Summer 2020 virtual concert" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#3d6f9e" />
+
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+
+    <!-- JavaScript and dependencies -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Load Stripe.js on your website. -->
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="js/ticket.js?version=1"></script>
+  </head>
+
+  <body class="text-white bg-dark">
+    <div class="container">
+      <main class="px-3 py-5">
+        <h1 class="mb-3 text-center">Donate your Ticket</h1>
+        <p class="mb-5 text-center lead">Please donate the price of a ticket for this summer's virtual concert!</p>
+
+        <p class="lead text-center">
+          <button id="donate-button" class="btn btn-lg btn-light font-weight-bold shadow">Donate Ticket</button>
+        </p>
+
+        <p id="error-message" class="lead mb-5"></p>
+      </main>
+    </div>
+  </body>
+</html>
