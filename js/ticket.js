@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
           mode: 'payment',
           successUrl: 'https://dues.wellspringensemble.org/success',
           cancelUrl: 'https://dues.wellspringensemble.org/',
+          submitType: 'donate'
         })
         .then(function (result) {
           if (result.error) {
