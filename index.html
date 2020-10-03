@@ -11,97 +11,14 @@
   <!-- CSS only -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
     integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/global.css" />
 
-  <!-- JavaScript and dependencies -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  <script>
+    window.location.replace("https://wellspring-store.herokuapp.com");
   </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
-  </script>
-
-  <!-- Load Stripe.js on your website. -->
-  <script src="https://js.stripe.com/v3/"></script>
-  <script src="js/dues.js?version=2"  ></script>
 </head>
 
 <body class="text-white bg-dark">
-  <div class="container">
-    <main class="px-3 py-5">
-      <h1 class="mb-3 text-center">Wellspring Membership Dues</h1>
-      <p class="mb-5 text-center lead">Here you will be able to pay your $60 membership dues for the virtual summer
-        session of 2020!</p>
-      <p>
-        The buttons below will allow you to add an additional donation of $10, $20, $25, $50, $60 and $100. This is
-        optional and clicking NONE will pay just the $60 fee. If you choose to donate extra, it should be reflected in
-        your contract as to where you would like this to go, either to help with scholarships for others wanting to
-        participate, or to our general fund. This can be found in the final section of the contract form. If, for any
-        reason, you would like to donate a different amount, select NONE and after submitting your normal payment, head
-        to <a href="https://www.wellspringensemble.org/donate">wellspringensemble.org</a> to donate as normal.
-      </p>
 
-      <p>
-        Dues help to cover the operating costs of the ensemble which include:
-
-        <ul>
-          <li>Payment of our employees, Evan and Genevieve</li>
-          <li>Materials/Music/Etc.</li>
-          <li>Time for Audio and Video Engineering</li>
-          <li>Software costs</li>
-          <li>Social Media engagement (Boosting, etc)</li>
-          <li>and more!</li>
-        </ul>
-      </p>
-
-      <p class="mb-5">
-        Thank you so much for participating in the exciting virtual summer session! We will be getting you materials
-        soon!
-      </p>
-
-      <p class="lead text-center">
-        Additional donation:
-      </p>
-
-      <div class="btn-group mb-3 d-flex justify-content-center">
-        <input type="radio" class="btn-check" name="donation-amount" id="option1" autocomplete="off" data-price=""
-        checked>
-        <label class="btn btn-secondary" for="option1">None</label>
-
-        <input type="radio" class="btn-check" name="donation-amount" id="option2" autocomplete="off"
-          data-price="price_1GwKrhDrsB0XpAimcACl26BV">
-        <label class="btn btn-secondary" for="option2">$10</label>
-
-        <input type="radio" class="btn-check" name="donation-amount" id="option3" autocomplete="off"
-          data-price="price_1GwKrhDrsB0XpAimXtzWU0Wf">
-        <label class="btn btn-secondary" for="option3">$20</label>
-
-        <input type="radio" class="btn-check" name="donation-amount" id="option4" autocomplete="off"
-          data-price="price_1GwKrhDrsB0XpAim77REXYc2">
-        <label class="btn btn-secondary" for="option4">$25</label>
-
-        <input type="radio" class="btn-check" name="donation-amount" id="option5" autocomplete="off"
-          data-price="price_1GwKrhDrsB0XpAimRGPgGV91">
-        <label class="btn btn-secondary" for="option5">$50</label>
-
-        <input type="radio" class="btn-check" name="donation-amount" id="option6" autocomplete="off"
-          data-price="price_1Gz4U3DrsB0XpAimuACJke5r">
-        <label class="btn btn-secondary" for="option6">$60</label>
-
-        <input type="radio" class="btn-check" name="donation-amount" id="option7" autocomplete="off"
-          data-price="price_1GwKs3DrsB0XpAim70uQRzBt">
-        <label class="btn btn-secondary" for="option7">$100</label>
-      </div>
-
-      <p class="lead text-center">
-        <button id="dues-button" class="btn btn-lg btn-light font-weight-bold shadow">
-          Pay Dues
-        </button>
-      </p>
-
-      <p id="error-message" class="lead mb-5"></p>
-    </main>
-  </div>
 </body>
 
 </html>
